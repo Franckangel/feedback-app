@@ -1,17 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const rootElement = document.getElementById('root');
+
+// Use createRoot instead of ReactDOM.render
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
+/* 
+//We import react
+import React from "react";
+//We import react DOM library which allows us to interact with the document odject Model
+// in the browser
+import ReactDOM from "react-dom";
+import './index.css';
+import App from './App';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//the render takes as first parameter a component and as second argument where we want to put it 
+ReactDOM.render(
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>,
+ document.getElementById('root')) */
