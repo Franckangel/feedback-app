@@ -6,7 +6,6 @@ import FeedbackStats from './components/FeedbackStats'
 import FeedbackForm from './components/FeedbackForm'
 import AboutPage from './pages/AboutPage'
 import AboutIconLink from './components/AboutIconLink'
-import Card from './components/shared/Card'
 import { FeedbackProvider } from './context/FeedbackContext'
 function App(){   
     //this returns JSX which is a javascript syntax extension
